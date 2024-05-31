@@ -1,60 +1,41 @@
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
-<header>
-    <div class="caja">
-        <h1>TODOLIST</h1>
-    </div>
-    <style>
-        .caja {
-            background-color: #9370DB; /* Fondo lila */
-            border: 2px solid black; /* Borde de la caja */
-            padding: 20px; /* Espacio interno de la caja */
-            width: 500.ch;
-            display: inline-block; /* Para ajustar la caja al contenido */
-        }
-
-        /* Estilo para el h1 */
-        .caja h1 {
-            color: white; /* Color del texto del h1 */
-            margin: 0; /* Quita el margen por defecto */
-        }
-    </style>
-</header>
-
 <body>
-    <form action="www.nuclio.school">
-        <br>
-        <h2><strong>Nueva Tarea</strong></h2>
-        <label>Escribe la descripción de la tarea</label>
-        <textarea cols="30" rows="5"></textarea>
-        <br></br>
-        <label>Fecha Limite</label>
-        <br></br>
-        <input type="date"></input>
+    <h1>TODOLIST</h1>
+    <h2>Nueva tarea</h2>
+    <form>
+        <label for="descripcion">Escribe la descripcion de la tarea</label>
+        <textarea id="descripcion" name="descripcion" rows="7" cols="50"></textarea>
+        <label for="fecha">Fecha limite</label>
+        <input type="date">
         <button>Insertar</button>
-
     </form>
+    <h2>Tareas</h2>
+    <p>Preparar la clase de Nuclio Full Stack Developer</p>
+    <p>In progress Fecha limite 25JUN</p>
+    <P>
+        <a href="">Editar</a>
+        <a href="">Marcar como finalizada</a>
+        <a href="">Eliminar</a>
+    </p>
+    <p>Devolver libros a la biblioteca</p>
+    <p><span>In progress</span>Fecha limite 25JUN</p>
+    <P>
+        <a href="">Editar</a>
+        <a href="">Marcar como finalizada</a>
+        <a href="">Eliminar</a>
+    </p>
+    <p>Preparar las maletas para el viaje a Marte</p>
+    <p>In progress Fecha limite 25JUN</p>
+    <P>
+        <a href="">Editar</a>
+        <a href="">Marcar como finalizada</a>
+        <a href="">Eliminar</a>
+    </p>
 
-    <H2>Tareas</H2>
-
-
-    <div>
-        <p>Preparar la clase de Nuclio Full Stack Developer</p>
-        <p><span>In Progress</span> Fecha Límite 25JUN</p>
-        <a>Editar</a>
-        <a>marcar como finalizada</a>
-        <a>Eliminar</a>
-
-
-    </div>
-
-  
-
-    
 </body>
 </html>
