@@ -1,0 +1,99 @@
+body{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    width: 400px;
+}
+
+.caja {
+    background-color: #9370DB; /* Fondo lila */
+    border: 2px solid black;
+    width: 552px;/* Borde de la caja */
+   
+    
+    display: inline-block;
+    display: flex;
+    justify-content: center;/* Para ajustar la caja al contenido */
+}
+
+/* Estilo para el h1 */
+ h1 {
+    color: white; /* Color del texto del h1 */
+   
+    align-items: center;
+    align-content: center;
+    /* Quita el margen por defecto */
+}
+
+label{
+    align-items: center;
+    display: block;
+}
+
+
+input{
+    display: inline-block;
+    display: flex;
+
+}
+
+
+ #miBoton{
+    display: flex;
+    justify-content: space-around;
+    background-color: #9370DB;
+   width: 552px;
+ 
+    color: white; /* Color del texto */
+    margin-top: 15px ; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Display inline-block */
+    font-size: 16px; /* Tamaño de la fuente */
+
+}
+
+div{
+    border-radius: 10ox;
+    width: 942px;
+}
+
+
+.enlaces{
+    display: flex;
+    gap:10px;
+}
+
+.enlaces p:last-child{
+   
+   
+    color: red;
+    margin-left: 150px;
+}
+
+.container{
+    border: 3px solid #9370DB;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 550;
+   
+}
+
+p{
+    font-style:normal;
+   
+}
+
+span{
+    background-color:#fcb700 ;
+    color:white
+}
+
+p[href="fechas"]{
+    color: rgba(128, 128, 128, 0.7); 
+}
+
+
+
