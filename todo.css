@@ -1,0 +1,121 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 1400px;       
+}
+
+h1 {
+    color:white;
+    background-color: #6667ab;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: black;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+label {
+    margin: 10px;
+}
+
+form {
+    margin: auto;
+    max-width: 650px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: #6667ab;
+    color: white;
+    border: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px;
+}
+
+div {
+    margin: 10px;
+    border: 1px solid #6667ab;
+    padding: 1rem;
+}
+
+span {
+    background-color: orange;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+}
+
+span.todo {
+    background-color: grey;
+}
+
+span.done {
+    background-color: lightgreen;
+}
+
+span.in-progress {
+    background-color: orange;
+}
+
+p.details {
+    color: darkgray;
+    font-size: 0.8rem;
+}
+
+a {
+    color: #6667ab;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+a.remove {
+    color: red;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (min-width: 476px) {
+    div.grid {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
+@media screen and (min-width: 728px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1400px) {
+    
+}
+
