@@ -1,0 +1,107 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    
+  
+}
+
+
+h1{
+    background-color: #6667ab;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    
+    margin: 0px;
+    border: 5px solid #6667ab;
+}
+
+h2{
+    margin: 15px;
+    font-size: 1.2rem;
+}
+
+p{
+    margin: 15px;
+}
+
+form{
+    margin: 15px;
+    max-width: 650px;
+    margin: auto;
+    padding: 10px;
+}
+
+button{
+    background-color: #6667ab;
+    color: white;
+    width: 100%;
+    margin-top: 30px;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+textarea{
+    border: 2px solid black;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+input{
+    border: 2px solid black;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    
+}
+
+label{
+   
+}
+
+div{
+    border: 1px solid #6667ab;
+    margin: 10px;
+    padding: 1rem;
+}
+span{
+    background-color: orange;
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+a{
+    color: #6667ab;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.eliminar{
+    color: red;  
+    
+}
+
+.details{
+    font-size: 0.8rem;
+    color: darkgrey;
+}
+
+container.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 890px) {
+    container.grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+   
+}

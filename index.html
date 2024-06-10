@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML, CSS, JS</title>
+    <link rel="stylesheet" href="TODO.css">
 </head>
 <body>
    <h1>TODOLIST</h1>
@@ -11,40 +12,42 @@
         <label form="">Escribe ñla descripcion de la tarea</label><br>
         <textarea></textarea><br>
         <label form="">Fecha limite</label><br>
-        <input type="date">
+        <input type="date"><br>
         <button>insertar</button>
     </form>
-
-<div>
     <h2>Tareas</h2>
+    <container class="grid">
+<div>
+    
     <p>Preparar la clase de Nuclio Full Stack Developer</p>
-    <p><span>In progress</span> Fecha limite 25JUN</p>
+    <p class="details"><span>In progress</span> Fecha limite 25JUN</p>
     <p>
         <a href="">Editar</a>
         <a href="">Marcar como Finalizada</a>
-        <a href="">Eliminar</a>
+        <a href="" class="eliminar">Eliminar</a>
     </p>
 </div>
 
 <div>
     <p>Devolver libros a la biblioteca y recoger nuevos libros sobre ciencia finccion</p>
-    <p><span>In progress</span> Fecha limite 25JUN</p>
+    <p class="details"><span>In progress</span> Fecha limite 25JUN</p>
     <p>
         <a href="">Editar</a>
         <a href="">Marcar como Finalizada</a>
-        <a href="">Eliminar</a>
+        <a href="" class="eliminar">Eliminar</a>
     </p>
 </div>
 
 <div>
     <p>Preparar las maletas y cpmtratar im seguro de viaje a Marte</p>
-    <p><span>In progress</span> Fecha limite 25JUN</p>
+    <p class="details"><span>In progress</span> Fecha limite 25JUN</p>
     <p>
         <a href="">Editar</a>
         <a href="">Marcar como Finalizada</a>
-        <a href="">Eliminar</a>
+        <a href="" class="eliminar">Eliminar</a>
     </p>
 </div>
+    </container>
 
 
 </body>
