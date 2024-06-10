@@ -1,0 +1,113 @@
+body {font-family:sans-serif;
+    margin:auto; 
+    max-width: 1200px;
+ }
+
+
+h1 {
+    color:white;
+    background-color: #6667ab;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding:1rem;
+    margin: 0;
+   
+}
+h2 {
+    color:black;
+    font-size: 1.2rem;
+    margin: 10px;
+    
+} 
+
+form{
+    margin: auto;
+    max-width: 650px;
+    padding: 10px;
+
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: #6667ab;
+    border: 0;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+div{
+    margin: 10px;
+    border: 1px solid #6667ab;
+    padding: 1rem;
+}
+
+span {
+    background: orange;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+span.in-progress{
+    background-color: orange;
+}
+
+span.todo{background-color: grey;}
+
+span.done{background-color: green;}
+a {
+    color: #6667ab;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+p.details{
+    font-size: 0.8rem;
+    color: grey;
+}
+a.remove{color: red;}
+
+div.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 476px) {
+      /* Fuera de móviles */
+    div.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+  
+@media screen and (min-width: 728px) {
+    /* iPad vertical */
+}
+
+@media screen and (min-width: 1024px) {
+    /* iPad horizontal o ord peq */
+}
+
+@media screen and (min-width: 1400px) {
+    /* Ord grandes  */
+}
