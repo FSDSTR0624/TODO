@@ -1,53 +1,60 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
     <h1>TODOLIST</h1>
+
+    <img src="todo.png" alt="" />
 
     <h2>Nueva tarea</h2>
     <form action="">
-        <label for="">Escribe la descripción de la tarea</label><br>
-        <textarea></textarea><br>
-        <label for="">Fecha límite</label><br>
-        <input type="date"><br>
-        <button>Insertar</button>
+      <label for="">Escribe la descripción de la tarea</label><br />
+      <textarea></textarea><br />
+      <label for="">Fecha límite</label><br />
+      <input type="date" /><br />
+      <button>Insertar</button>
     </form>
 
     <h2>Tareas</h2>
 
-    <div>
+    <div class="grid">
+      <div>
         <p>Preparar la clase de Nuclio Full Stack Developer</p>
-        <p><span>In Progress</span> Fecha límite 25JUN</p>
+        <p class="details"><span class="done">Done</span> Fecha límite 25JUN</p>
         <p>
-            <a href="">Editar</a>
-            <a href="">Marcar como finalizada</a>
-            <a href="">Eliminar</a>
+          <a href="">Editar</a>
+          <a href="">Marcar como finalizada</a>
+          <a href="" class="remove">Eliminar</a>
         </p>
-    </div>
+      </div>
 
-    <div>
+      <div>
         <p>Devolver libros a la biblioteca</p>
-        <p><span>In Progress</span> Fecha límite 25JUN</p>
-        <p>
-            <a href="">Editar</a>
-            <a href="">Marcar como finalizada</a>
-            <a href="">Eliminar</a>
+        <p class="details">
+          <span class="todo">To Do</span> Fecha límite 25JUN
         </p>
-    </div>
+        <p>
+          <a href="">Editar</a>
+          <a href="">Marcar como finalizada</a>
+          <a href="" class="remove">Eliminar</a>
+        </p>
+      </div>
 
-    <div>
+      <div>
         <p>Preparar las maletas para el viaje a Marte</p>
-        <p><span>In Progress</span> Fecha límite 25JUN</p>
-        <p>
-            <a href="">Editar</a>
-            <a href="">Marcar como finalizada</a>
-            <a href="">Eliminar</a>
+        <p class="details">
+          <span class="in-progress">In Progress</span> Fecha límite 25JUN
         </p>
+        <p>
+          <a href="">Editar</a>
+          <a href="">Marcar como finalizada</a>
+          <a href="" class="remove">Eliminar</a>
+        </p>
+      </div>
     </div>
-
-
-</body>
+  </body>
 </html>
