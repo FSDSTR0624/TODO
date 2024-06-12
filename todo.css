@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    max-width: 1200px;
+}
+
+h1 {
+    color: white;
+    background-color: #6667ab;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+
+    padding: 1rem;
+
+}
+
+h2 {
+    color: black;
+    margin: 10px;
+}
+
+form {
+    margin: auto;
+    max-width: 650px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: #6667ab;
+    color: white;
+    border: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div {
+    margin: 10px;
+    border: 1px solid #6667ab;
+    padding: 1rem;
+}
+
+span {
+    background: orange;
+    padding: 4px 8px 4px 8px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+}
+
+p.details {
+    font-size: 0.8rem;
+    color: darkgrey;
+}
+
+a {
+    color: #6667ab;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+a.remove {
+    color: red
+}
+
+span.inprogress {
+
+    background-color: orange;
+
+}
+
+span.todo {
+    background-color: grey;
+}
+
+span.done {
+    background-color: lightgreen;
+}
+
+div.grid{
+    display: flex;
+    grid-template-columns: 1fr;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 476px) {
+    div.grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width:728px){
+    /*IPad en vertical*/
+    
+}
+@media screen and (min-width:1024px){
+    /*IPad en horizanta o ordenadores pequeños*/
+    
+}
+@media screen and (min-width:1400px){
+    /*ordenadores grandes*/
+    
+}
