@@ -3,53 +3,57 @@
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=s, initial-scale=1.0">
+          <link rel="stylesheet" href="main.css">
           <title>TODO LIST</title>
 </head>
 
 <body>
-          <h1>TODOLIST</h1>
+          <h1>TODO LIST 📃</h1>
 
           <h2>New task</h2>
           <form action="">
-                    <label for="description">Write the task description</label><br>
+                    
+                    <label for="description">Write the task description</label>
                     <textarea name="description" id="description"></textarea>
                    
-                    <label for="">Fecha límite</label><br>
-                    <input type="date"><br>
+                    <label for="date">Deadline</label>
+                    <input type="date">
 
-                    <button>Insertar</button>
+                    <button>Submit</button>
           </form>
 
           <h2>Tasks</h2>
 
-          <div>
-                    <p>Prepare the Nuclio Full Stack Developer class</p>
-                    <p><span>In Progress</span> Deadline 25JUN</p>
-                    <p>
-                              <a href="">Edit</a>
-                              <a href="">Mark as done</a>
-                              <a href="">Delete</a>
-                    </p>
-          </div>
-
-          <div>
-                    <p>Return books to the library</p>
-                    <p><span>In Progress</span> Deadline 25JUN</p>
-                    <p>
-                              <a href="">Edit</a>
-                              <a href="">Mark as done</a>
-                              <a href="">Delete</a>
-                    </p>
-          </div>
-
-          <div>
-                    <p>Prepare the suitcases for the trip to Mars</p>
-                    <p><span>In Progress</span> Deadline 25JUN</p>
-                    <p>
-                              <a href="">Edit</a>
-                              <a href="">Mark as done</a>
-                              <a href="">Delete</a>
-                    </p>
+          <div class="grid">
+                    <div class="card">
+                              <p>Prepare the Nuclio Full Stack Developer class</p>
+                              <p class="details"><span class="Done">Done</span> Deadline 25JUN</p>
+                              <p>
+                                        <a href="">Edit</a>
+                                        <a href="">Mark as done</a>
+                                        <a href="">Delete</a>
+                              </p>
+                    </div>
+          
+                    <div class="card">
+                              <p>Return books to the library</p>
+                              <p class="details"><span class="todo">Todo</span> Deadline 25JUN</p>
+                              <p>
+                                        <a href="">Edit</a>
+                                        <a href="">Mark as done</a>
+                                        <a href="">Delete</a>
+                              </p>
+                    </div>
+          
+                    <div class="card">
+                              <p>Prepare the suitcases for the trip to Mars</p>
+                              <p class="details"><span class="in-progress">In Progress</span> Deadline 25JUN</p>
+                              <p>
+                                        <a href="">Edit</a>
+                                        <a href="">Mark as done</a>
+                                        <a href="">Delete</a>
+                              </p>
+                    </div>
           </div>
 
 </body>
