@@ -6,7 +6,7 @@
 
 body {
           font-family: 'Georgia', "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-          background-color: #776FEB;
+          background: radial-gradient(ellipse at top, #2a2a72, #000000);
           display: flex;
           justify-content: center;
           align-items: center;
