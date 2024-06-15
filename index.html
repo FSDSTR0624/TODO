@@ -4,66 +4,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="codigo.js"></script>
 </head>
-<header>
-    <div class="caja">
-        <h1>TODOLIST</h1>
-    </div>
-  
-</header>
-
 <body>
-    <form action="www.nuclio.school">
-       
-        <h2><strong>Nueva Tarea</strong></h2>
-        <label>Escribe la descripción de la tarea</label>
-        <textarea cols="72" rows="5"></textarea>
-        
-        <label>Fecha Limite</label>
-        <input type="date"></input>
-        <button  id="miBoton">Insertar</button>
-
-    </form>
-  
-
-    <H2>Tareas</H2>
-
-
-    <div class="container" >
-        <p>Preparar la clase de Nuclio Full Stack Developer</p>
-        <p href="fechas"><span>IN PROGRESS</span> Fecha Límite 25JUN</p>
-        <div class="enlaces">
-        <p> <a href="editar"> EDITAR </a></p>
-        <p> <a  href="marcarcomofinalizada"> MARCAR COMO FINALIZADA </a></p> 
-       <p> <a>ELIMINAR</a></p></div>
-    </div>
-    <br>
-
-    <div class="container" >
-        <p>Devolver libros a la biblioteca y recoger nuevos libros sobre ciencia ficción</p>
-        <p href="fechas"><span>IN PROGRESS</span> Fecha Límite 17JUL</p>
-        <div class="enlaces">
-        <p> <a href="editar"> EDITAR </a></p>
-        <p> <a  href="marcarcomofinalizada"> MARCAR COMO FINALIZADA </a></p> 
-       <p> <a>ELIMINAR</a></p></div>
-    </div>
-    <br>
-    <div class="container" >
-        <p>Preparar maletas y contratar el seguro para el viaje a Marte</p>
-        <p href="fechas"><span>IN PROGRESS</span> Fecha Límite 3AGO</p>
-        <div class="enlaces">
-        <p> <a href="editar"> EDITAR </a></p>
-        <p> <a  href="marcarcomofinalizada"> MARCAR COMO FINALIZADA </a></p> 
-       <p> <a>ELIMINAR</a></p></div>
-    </div>
-    
-    
-    
 
 
 
+    <header>
+   
+            <h1>TODOLIST</h1>
  
-  
+      
+    </header>
+    
+    
+           
+            <h2><strong>Nueva Tarea</strong></h2>
+            
+        <form  id="task-form">
+            <label for=" description">Escribe la descripción de la tarea</label>
+            <textarea id="description" name="description" cols="72" rows="5"></textarea>
+            
+            <label for="date">Fecha Limite</label>
+            <input id="date" type="date"></input>
+            <button type="submit" id="miBoton">Insertar</button>
+       
+            <h2>Tareas</h2>
+        </form>
+      
+    
+    
+       
+    <div class="grid" id="task-list">
+        <div>
+            <p>Preparar la clase de Nuclio Full Stack Developer</p>
+            <p href="fechas"><span>IN PROGRESS</span> Fecha Límite 25JUN</p>
+            <p> <a href="editar"> EDITAR </a></p>
+            <p> <a href="marcarcomofinalizada"> MARCAR COMO FINALIZADA </a></p>
+            <p> <a class="remove">ELIMINAR</a></p>
+        </div>
+
+        <div>
+            <p>Devolver libros a la biblioteca y recoger nuevos libros sobre ciencia ficción</p>
+            <p href="fechas"><span>IN PROGRESS</span> Fecha Límite 17JUL</p>
+            <p> <a href="editar"> EDITAR </a></p>
+            <p> <a href="marcarcomofinalizada"> MARCAR COMO FINALIZADA </a></p>
+            <p> <a class="remove">ELIMINAR</a></p>
+        </div>
+
+        <div>
+            <p>Preparar maletas y contratar el seguro para el viaje a Marte</p>
+            <p href="fechas"><span>IN PROGRESS</span> Fecha Límite 3AGO</p>
+            <p> <a href="editar"> EDITAR </a></p>
+            <p> <a href="marcarcomofinalizada"> MARCAR COMO FINALIZADA </a></p>
+            <p> <a class="remove">ELIMINAR</a></p>
+        </div>
+    </div>
+        
+    
+    
+    
+     
+      
+
 
     
 </body>
