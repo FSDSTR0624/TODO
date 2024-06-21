@@ -1,6 +1,7 @@
 let todoTasks = [];
 let todoForm = document.getElementById('task-form');
 
+editTaskIndex = -1;
 todoForm.addEventListener('submit', function (event) {
 
           event.preventDefault();
@@ -12,7 +13,13 @@ todoForm.addEventListener('submit', function (event) {
                     status: "todo",
           };
 
-          todoTasks.push(task);
+          if (editTaskIndex !== -1) {
+                    todoTasks[editTaskIndex] = task;
+                    editTaskIndex = -1;
+          } else {
+                    todoTasks.push(task);
+          }
+
           saveTaskInLocalStorage();
 
           displayTasks();
@@ -82,8 +89,8 @@ const deleteTask = (index) => {
 };
 
 const keepTaskOrder = (index) => {
-          
-          let task = todoTasks[index];          
+
+          let task = todoTasks[index];
 
           let newTask = task
           task.description = newTask.description;
@@ -99,10 +106,12 @@ const editTask = (index) => {
           document.getElementById('task-date').value = task.date;
 
           keepTaskOrder(index);
-          saveTaskInLocalStorage();          
+          saveTaskInLocalStorage();
 
           displayTasks();
-          }
+
+          editTaskIndex = index;
+}
 
 const doTask = (index, target) => {
           todoTasks[index].done = true;
