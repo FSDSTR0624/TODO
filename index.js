@@ -80,3 +80,26 @@ const deleteTask = (index) => {
           saveTaskInLocalStorage();
           displayTasks();
 };
+
+const keepTaskOrder = (index) => {
+          
+          let task = todoTasks[index];          
+
+          let newTask = task
+          task.description = newTask.description;
+          task.date = newTask.date;
+
+          delete task;
+}
+
+const editTask = (index) => {
+          let task = todoTasks[index];
+
+          document.getElementById('task-input').value = task.description;
+          document.getElementById('task-date').value = task.date;
+
+          keepTaskOrder(index);
+          saveTaskInLocalStorage();          
+
+          displayTasks();
+}
