@@ -1,4 +1,22 @@
 let todoTasks = [];
+let todoForm = document.getElementById('task-form');
+
+todoForm.addEventListener('submit', function (event) {
+
+          event.preventDefault();
+
+          let task = {
+                    description: document.getElementById('task-input').value,
+                    date: document.getElementById('task-date').value,
+                    done: false,
+                    status: "todo",
+          };
+
+
+          saveTaskInLocalStorage();
+
+          displayTasks();
+});
 const displayTasks = () => {
           let taskList = document.getElementById('task-list');
           taskList.innerHTML = "";
