@@ -113,3 +113,19 @@ const doTask = (index, target) => {
           displayTasks();
 
 };
+
+const saveTaskInLocalStorage = () => {
+
+          localStorage.setItem('todoTasks', JSON.stringify(todoTasks));
+};
+
+const getTasksFromLocalStorage = () => {
+          todoTasks = JSON.parse(localStorage.getItem('todoTasks')) || [];
+          displayTasks();
+};
+
+const deleteTaskFromLocalStorage = () => {
+          localStorage.removeItem('todoTasks');
+}
+
+getTasksFromLocalStorage();
