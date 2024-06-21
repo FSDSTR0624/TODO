@@ -6,11 +6,12 @@
 
 body {
           font-family: 'Georgia', "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-          background: radial-gradient(ellipse at top, #2a2a72, #000000);
+          background: radial-gradient(ellipse at top, #2a2a72, #0c0c0c);
+          background-attachment: fixed;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          flex-direction: column;
           min-height: 100vh;
           padding: 20px;
 }
@@ -59,7 +60,7 @@ form {
           max-width: 700px;
           box-sizing: border-box;
           padding: 20px;
-          background: linear-gradient(145deg, #f0f0f0, #ffffff);
+          background: linear-gradient(145deg, #e0e8ff, #eef3ff);
           border-radius: 15px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -84,12 +85,12 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-          border-color: #776FEB;
+          border-color: #5B8EEB;
           box-shadow: 0 0 8px rgba(119, 111, 235, 0.3);
 }
 
 form button {
-          background-color: #5A55A1;
+          background-color: #2866da;
           color: #fff;
           font-weight: 600;
           cursor: pointer;
@@ -98,13 +99,13 @@ form button {
 }
 
 form button:hover {
-          background-color: #4C48D1;
+          background-color: #1058de;
           transform: translateY(-2px);
 }
 
 
 div .card {
-          background: linear-gradient(145deg, #f0f0f0, #ffffff);
+          background: linear-gradient(145deg, #e0e8ff, #eef3ff);
           border: none;
           border-radius: 15px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -130,12 +131,16 @@ a:hover {
           text-decoration: underline;
 }
 
-a:nth-child(2) {
-          color: #3DCC77;
+.task-edit {
+          color: #5B8EEB;;
 }
 
-a:nth-child(3) {
-          color: #FF6A6A;
+.task-done {
+          color: #156b38bf;
+}
+
+.task-delete {
+          color: rgb(197 28 28 / 81%);
 }
 
 span {
@@ -147,19 +152,18 @@ span {
 }
 
 .done {
-          background-color: #3DCC77;
+          background-color: #156b38bf;
 }
 
 .todo {
-          background-color: #FF6A6A;
+          background-color: rgb(197 28 28 / 81%);
 }
 
 .in-progress {
           background-color: #5A55A1;
-          ;
 }
 
-.grid {
+#task-list {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
           gap: 20px;
