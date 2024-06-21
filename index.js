@@ -17,6 +17,7 @@ todoForm.addEventListener('submit', function (event) {
 
           displayTasks();
 });
+
 const displayTasks = () => {
           let taskList = document.getElementById('task-list');
           taskList.innerHTML = "";
@@ -69,4 +70,13 @@ const displayTasks = () => {
                               });
                     }
           }
+};
+
+
+const deleteTask = (index) => {
+          todoTasks.splice(index, 1);
+
+          deleteTaskFromLocalStorage();
+          saveTaskInLocalStorage();
+          displayTasks();
 };
