@@ -12,7 +12,7 @@ todoForm.addEventListener('submit', function (event) {
                     status: "todo",
           };
 
-
+          todoTasks.push(task);
           saveTaskInLocalStorage();
 
           displayTasks();
@@ -102,7 +102,7 @@ const editTask = (index) => {
           saveTaskInLocalStorage();          
 
           displayTasks();
-}
+          }
 
 const doTask = (index, target) => {
           todoTasks[index].done = true;
