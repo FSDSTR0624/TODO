@@ -103,3 +103,13 @@ const editTask = (index) => {
 
           displayTasks();
 }
+
+const doTask = (index, target) => {
+          todoTasks[index].done = true;
+          todoTasks[index].status = todoTasks[index].done ? "done" : "todo";
+
+
+          saveTaskInLocalStorage();
+          displayTasks();
+
+};
