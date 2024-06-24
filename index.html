@@ -1,55 +1,29 @@
+<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=s, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TodoList</title>
-    <link rel="stylesheet" href="todo.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="todo.css" />
+    <script defer src="index.js"></script>
+    
+  </head>
+
+  <body>
     <h1>TodoList</h1>
 
     <h2>Nueva tarea</h2>
-    <form action="">
-        <label for="">Escribe la descripción de la tarea</label><br/>
-        <textarea></textarea><br/>
-        <label for="">Fecha límite</label><br/>
-        <input type="date" /><br/>
-        <button>Insertar</button>
+    <form id="task-form" action="">
+      <label for="task-desc">Escribe la descripción de la tarea</label><br />
+      <textarea id="task-desc" required></textarea><br />
+      <label for="task-date">Fecha límite</label><br />
+      <input type="date" id="task-date" required /><br />
+      <button type="submit">Insertar</button>
     </form>
 
     <h2>Tareas</h2>
 
-    <div class="grid">
-
-    <div>
-        <p>Preparar la clase de Nuclio Full Stack Developer</p>
-        <p class="details"><span class="in-progress">In progress</span> Fecha límite 25 de junio</p>
-        <p>
-            <a href="">Editar</a>
-            <a href="">Marcar como finalizada</a>
-            <a href="" class="remove">Eliminar</a>
-        </p>
+    <div class="grid" id="task-list">
     </div>
-
-    <div>
-        <p>Devolver libros a la biblioteca y recoger nuevos libros sobre ciencia y ficción</p>
-        <p class="details"><span class="in-progress">In progress</span> Fecha límite 25 de junio</p>
-        <p>
-            <a href="">Editar</a>
-            <a href="">Marcar como finalizada</a>
-            <a href="" class="remove">Eliminar</a>
-        </p>
-    </div>
-
-    <div>
-        <p>Preparar las maletas y contratar el seguro para el viaje a Marte</p>
-        <p class="details"><span class="in-progress">In progress</span> Fecha límite 25 de junio</p>
-        <p>
-            <a href="">Editar</a>
-            <a href="">Marcar como finalizada</a>
-            <a href="" class="remove">Eliminar</a>
-        </p>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
