@@ -1,1 +1,41 @@
-test 1, where is my code?
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>TODOLIST</h1>
+        </header>
+
+        <!-- Form -->
+        <section class="form-section">
+            <h2>Nueva tarea</h2>
+            <form id="todo-form">
+                <label for="task-desc">Escribe la descripción de la tarea</label>
+                <textarea id="task-desc" required></textarea>
+                
+                <label for="due-date">Fecha límite</label> 
+                         <input type="date" id="due-date" required>
+                
+                <button type="submit" id="insert-btn">INSERTAR</button>
+            </form>
+        </section>
+
+        <!-- ToDo List -->
+        <section class="task-list">
+            <h2>Tareas</h2>
+            <div id="task-container">
+                <!-- Dynamic Task Items will be inserted here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
